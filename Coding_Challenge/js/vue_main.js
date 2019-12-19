@@ -64,6 +64,8 @@ $( "#search_cities" ).autocomplete({
   source: weather.cities,
   select: function(event, ui) {
 	weather.message = ui.item.value;
-  }
+  },
+  minLength:0
 });
+
 //e693425fe5fc8178c44c7d680cff53e8
